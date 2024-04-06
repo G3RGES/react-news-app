@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ setCategory }) => {
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
@@ -22,24 +22,58 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
+              <div
+                className="nav-link"
+                onClick={() => setCategory("technology")}
+                role="button"
+              >
+                Technology
+              </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
-              </a>
+              <div
+                className="nav-link"
+                onClick={() => setCategory("business")}
+                role="button"
+              >
+                Business
+              </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
+              <div
+                className="nav-link"
+                onClick={() => setCategory("health")}
+                role="button"
+              >
+                Health
+              </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
+              <div
+                className="nav-link"
+                onClick={() => setCategory("science")}
+                role="button"
+              >
+                Science
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onClick={() => setCategory("sports")}
+                role="button"
+              >
+                Sports
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onClick={() => setCategory("entertainment")}
+                role="button"
+              >
+                Entertainment
+              </div>
             </li>
           </ul>
         </div>
