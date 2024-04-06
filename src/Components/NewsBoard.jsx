@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
+
+// components
 import NewsItem from "./NewsItem";
+
+//* eg NEWS DON'T HAVE ANY IMAGES SO THE IMPORTED IMAGE
+//*  IS USED WHILE us NEWS HAVE IMAGES(AT LEAST MOST OF THEM)
 
 const NewsBoard = () => {
   const [articles, setArticles] = useState([]);
